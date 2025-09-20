@@ -1,0 +1,10 @@
+Quando creo un database ottengo un'insieme di tabelle, in queste tabelle svolgero azioni con SQL.
+Schema logico in ambito database relazionale è un insieme di tabelle(riquadri che contengono informazioni e dati disposti in righe e colonne, la prima riga si chiama header).
+Schema di relazione è l'insieme degli attributi, nelle tabelle si usa il plurale (es. studenti).
+Istanza di relazione è l'insieme dei dati che la tabella contiene.
+Schema di una base di dati, base di dati -> insieme di attributi.
+Istanza di base di dati -> dati effettivi di tutte le tabelle.
+grado = numero di attributi.
+cardinalità = numero di tuple per attributo(l'ordine delle tuple e degli attributi è indifferente).
+deve esserci almeno un attributo univoco(si sottolinea l'attributo univoco).
+PK(primary key) è quell'attributo/i che non si può ripetere, serve ad evitare ripetizioni fra le tuple.
