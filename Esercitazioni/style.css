@@ -1,0 +1,11 @@
+button{
+    padding: 40px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+div{
+    padding: 80px;
+    border-color: black;
+    border: solid;
+    border-radius: 25px;
+}
