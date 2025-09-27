@@ -1,0 +1,15 @@
+Una relazione matematica è un sottoinsieme di un prodotto cartesiano
+Un prodotto cartesiano è quell'operazione che mi permette di abbinare ogni elemento del primo insieme ad ogni elemento del secondo insieme
+prodotto cartesiano = A1 x A2
+relazione (matematica) = R(A1 x A2)
+Operazioni:
+unarie:
+Selezione, si usa il simbolo sigma (σ).
+Proiezione, si usa il simbolo pi greco (π), tira fuori un sottoinsieme di attributi.
+binarie:
+Unione, si usa il simbolo (∪), contiene tutte le tuple delle relazioni.
+Intersezione, si usa il simbolo (∩), contiene le tuple comuni alle relazioni.
+Differenza, si usa il simbolo (-), tuple appartenenti alla prima relazione.
+Congiungere(join), si usa il simbolo (⋈), correlare due tabelle tramite degli attributi in comune.
+  |_equi join tiene entrambe le tuple.
+  |_natural join tiene solo una delle due tuple.
