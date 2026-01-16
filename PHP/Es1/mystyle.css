@@ -1,3 +1,6 @@
 body{
     background-color: blueviolet;
 }
+.mytable{
+    border: 1px solid black; 
+}
