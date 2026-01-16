@@ -3,6 +3,23 @@ $num  = 10;
 $var = "buongiorno";
 $materie = ['informatica', 'tpsit', 'sistemi'];
 $message = 'questo è un messaggio per js'
+$myArray = [
+        [
+                'nome' => 'Enrico',
+                'cognome' => 'Prearo',
+                'media' => 7
+        ],
+        [
+                'nome' => 'Marcello',
+                'cognome' => 'Targa',
+                'media' => 6
+        ],
+        [
+                'nome' => 'Riccardo',
+                'cognome' => 'Merlo',
+                'media' => 8
+        ]
+];
 ?>
 <!doctype html>
 <html lang="en">
@@ -29,6 +46,24 @@ $message = 'questo è un messaggio per js'
 <p>il numero è maggiore di 8</p>
 <?php endif;?>
 <button id="mybutton">premi</button>
+<br>
+<table class = "mytable">
+    <tr>
+        <?php foreach ($myArray[0] as $key => $_): ?>
+            <th><?= ucfirst($key) ?></th>
+        <?php endforeach; ?>
+    </tr>
+    <tbody>
+    <?php foreach ($myArray as $studente): ?>
+        <tr>
+            <td><?= $studente['nome'] ?></td>
+            <td><?= $studente['cognome'] ?></td>
+            <td><?= $studente['media'] ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+<br>
 <script> message = <?= json_encode($message)?></script>
 <script src="myscript.js"></script>
 </body>
