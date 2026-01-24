@@ -1,1 +1,25 @@
+body {
+    background-color: lightgrey;
+}
 
+input {
+    border: solid black 2px;
+    border-radius: 10px;
+    width: 4%;
+}
+
+input:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    border: solid black 2px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
