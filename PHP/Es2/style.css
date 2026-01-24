@@ -1,5 +1,8 @@
 body {
     background-color: lightgrey;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 input {
@@ -22,4 +25,9 @@ button {
 button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
 }
