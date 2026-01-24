@@ -13,10 +13,15 @@ $nCorsi = 0;
 </head>
 <body>
 <form method="POST" action="corsi.php">
-<p>Quanti corsi desideri inserire? (max 10)</p>
-<input<?php $nCorsi ?>>
+    <p>Quanti corsi desideri inserire? (max 10)</p>
+    <input type="number" name="nCorsi" max="10">
 
-<button type="submit">INVIA</button>
-<script src="script.js"></script>
+    <button type="submit">INVIA</button>
+</form>
+
+<footer><hr>
+    <p>🎓 Selezione corsi IIS Viola Marchesini RO — © 2026</p>
+    <hr>
+</footer>
 </body>
 </html>
