@@ -1,13 +1,6 @@
 <?php
-$db =  new PDO(
-    'mysql:host=192.168.60.144;dbname=enrico_prearo_itis;charset=utf8mb4',
-  'enrico_prearo',
-  'scongiureremo.dissensi.',
-  [
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-  ]
-);
+$dbconfig = require 'configuration/db_configuration.php';
+$db =  new PDO($dbconfig['dsn'],$dbconfig['username'],$dbconfig['password'],$dbconfig['options']);
 /*
 $query = 'SELECT * FROM studenti';
 try{
@@ -72,6 +65,48 @@ try{
         echo "media: ". $user -> media. "<br>";
         echo "data_iscrizione: ". $user -> data_iscrizione. "<br>";
         echo "<hr>";
+    }
+    $stmt -> closeCursor();
+
+}catch (PDOException $e){
+    echo "A DB error occured. Please try again later";
+}
+$query = 'UPDATE studenti
+SET media = :media
+WHERE nome = :name';
+
+try {
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':name', 'Antonio', PDO::PARAM_STR);
+    $stmt->bindValue(':media', 10, PDO::PARAM_INT);
+    $stmt->execute();
+
+    if ($stmt->rowCount() === 0) {
+        echo "No rows were updated.";
+    } else {
+        echo "Update successful.";
+    }
+    echo '<br>';
+    $stmt->closeCursor();
+} catch (PDOException $e) {
+    echo "A database error occurred. Please try again later.";
+    echo '<br>';
+    echo $e;
+    echo '<br>';
+}
+//DELETE
+$query = "delete from studenti 
+    where nome = :nome";
+
+try{
+    $stmt = $db -> prepare($query); // Prepara la query
+    $stmt -> bindValue(":nome", "Lucy", PDO::PARAM_STR);
+    $stmt -> execute(); // Esegue la query
+
+    if($stmt -> rowCount() === 0){
+        echo "Delete failed: no rows matched the given name";
+    }else{
+        echo "Record deleted";
     }
     $stmt -> closeCursor();
 
