@@ -1,0 +1,18 @@
+HTTP -> application layer.
+HTTPS -> application layer & transport layer security.
+La comunicazione TCP/IP è connection oriented.
+la funzione dell'HTTP è quella di far comunicare un client ed un server.
+
+        -----------HTTP request----------->
+💻client                                   server🌐
+        <-----------HTTP response----------
+
+l'HTTP è state less, ossia che non può memorizzare lo stato di un client all'interno del server.
+la request è composta da: request line, headers, body(optional).
+la response è composta da: status code, headers, body.
+
+request line: HTTP version, method(GET,POST,PUT,HEAD,DELETE,PATCH OPTIONS,DELETE,TRACE), URL.
+headers: metadato
+body: data
+
+status code: stato della risposta ceh inizia con un numero che indica il tipo del messaggio
