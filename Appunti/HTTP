@@ -19,4 +19,5 @@ status code: stato della risposta ceh inizia con un numero che indica il tipo de
 headers: metadato.
 body: data.
 
-Dall'HTTP1.1 è stata introdotta la funzione keep alive dove viene usata la stessa connessione per più request & response.
+Dall'HTTP 1.1 è stata introdotta la funzione keep alive dove viene usata la stessa connessione per più request & response,
+la connessione viene interrotta dall'utente o dopo un determinato time-out.
