@@ -24,3 +24,5 @@ la connessione viene interrotta dall'utente o dopo un determinato time-out.
 
 link sulle nozioni da sapere:
 https://developer.mozilla.org/en-US/docs/Web/HTTP
+
+Il client legge con GET e scrive con POST, si usa POST nella lettura se quello che vado a leggere non voglio che sia visto(dati sensibili).
