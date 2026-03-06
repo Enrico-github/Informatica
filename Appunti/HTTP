@@ -21,3 +21,6 @@ body: data.
 
 Dall'HTTP 1.1 è stata introdotta la funzione keep alive dove viene usata la stessa connessione per più request & response,
 la connessione viene interrotta dall'utente o dopo un determinato time-out.
+
+link sulle nozioni da sapere:
+https://developer.mozilla.org/en-US/docs/Web/HTTP
