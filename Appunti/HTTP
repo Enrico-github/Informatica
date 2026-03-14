@@ -15,7 +15,7 @@ request line: HTTP version, method(GET,POST,PUT,HEAD,DELETE,PATCH OPTIONS,DELETE
 headers: metadato.
 body: data.
 
-status code: stato della risposta ceh inizia con un numero che indica il tipo del messaggio.
+status code: stato della risposta che inizia con un numero che indica il tipo del messaggio.
 headers: metadato.
 body: data.
 
@@ -26,3 +26,6 @@ link sulle nozioni da sapere:
 https://developer.mozilla.org/en-US/docs/Web/HTTP
 
 Il client legge con GET e scrive con POST, si usa POST nella lettura se quello che vado a leggere non voglio che sia visto(dati sensibili).
+
+idem potente descrive un sistema che riproduce lo stesso effetto dopo un operazione 
+non idem potente descrive un sistema che cambia dopo l'esecuzione di un operazione
