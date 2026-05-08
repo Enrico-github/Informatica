@@ -1,0 +1,55 @@
+MVC --> model view controller
+È un pattern architetturale, serve all'organizzazione dei file quando il progetto è molto complesso.
+Caratteristiche:
+-più ordinato
+-manutenibile
+-csalabile
+-riutilizzabile
+-facile da sviluppare in team
+-facile da distribuire su più livelli di rete
+
+VIEW
+quello che vede l'utente.
+
+MODELLO
+dati e la logica applicativa (query per accedere al database).
+
+CONTROLLER
+gestisce i dati e li rende adeguati all'utente in base all'input che riceve.
+
+bisogna tenere valida la "separation of concerns".
+(vedi MDN)
+________________________________________________________________________________________________________
+SCHEMA
+
+Utente
+   ↓
+Controller
+   ↓
+Model ↔ Database
+   ↓
+Controller
+   ↓
+View
+   ↓
+Utente
+________________________________________________________________________________________________________
+URL
+
+https://www.example.com:443/cartella/pagina.html?id=10#sezione
+│       │               │   │                     │      │
+│       │               │   │                     │      └─ frammento
+│       │               │   │                     └──────── query string
+│       │               │   └────────────────────── percorso
+│       │               └────────────────────────── porta
+│       └────────────────────────────────────────── host
+└────────────────────────────────────────────────── protocollo
+
+_________________________________________________________________________________________________________
+
+router = classe in php
+il router integrato nell'MVC stacca indirizzo pubblico da quello privato, così da garantire la riservatezza.
+
+
+
+
