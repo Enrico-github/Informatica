@@ -1,5 +1,9 @@
+Esempio 2
+admin -- 
+
 Esempio 4
 user1' OR '1=1
 xxx
+
 Esempio 5
 model1' UNION SELECT*FORM users -- 
